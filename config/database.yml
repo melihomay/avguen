@@ -14,5 +14,5 @@ development:
 test: &test
   <<: *base
   database: bim_test
-  
+
 cucumber:
