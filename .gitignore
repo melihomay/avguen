@@ -1,0 +1,37 @@
+# Default Rails ignores
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+
+# Asset Pipeline
+/public/assets
+
+# RubyMine ignores
+/.idea
+
+# Mac OS X ignores
+.DS_Store
+
+# config/database.yml
+config/mailer.yml
+config/payment.yml
+config/sms.yml
+
+# Yard generated documentation
+/.yardoc
+/doc/yard
+
+# SimpleCov generated reports
+/coverage
+
+# New Relic RPM
+config/newrelic.yml
+
+# todo do we really need the following ignores?
+.loadpath
+.project
+.autotest
+nbproject/*
+.rspec
