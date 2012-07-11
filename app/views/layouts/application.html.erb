@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bim</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <title>BIM e.V. - Bayerisches Institut für Migration</title>
 
-<%= yield %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+    <meta name="robots" content="INDEX, FOLLOW"/>
+    <link rel="shortcut icon" href="/favicon.png?1"/>
+    <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width">
+    
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-</body>
+  <%= yield %>
+
+  </body>
 </html>
+<%= javascript_include_tag "application" %>

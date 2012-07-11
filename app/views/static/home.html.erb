@@ -1,7 +1,16 @@
-<%= render partial: 'navigation' %>
+<div class="page">
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+    <h1>BIM e.V. - Bayerisches Institut für Migration</h1>
+    <%= render 'header' %>
+  </header>
 
-<h1>Static#home</h1>
-<p>Find me in app/views/static/home.html.erb</p>
+  
+  <div role="main">
+    <h2>Erste Ausgabe - Juli 2012</h2>
+    <p>Kurztext</p>
+    <a href="#1">Download »</a>
+  </div>
 
-
-<p><a href="#download.pdf">Download</a></p>
+  <%= render 'navigation' %>
+</div>
