@@ -7,4 +7,7 @@ class StaticController < ApplicationController
 
   def info
   end
+
+  def gazete
+  end
 end
