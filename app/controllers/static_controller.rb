@@ -9,7 +9,7 @@ class StaticController < ApplicationController
   end
 
   def gazete
-    @layout = "layout=http://#{request.host}:3000/static/flash/layout.xml"
+    @layout = "layout=http://#{request.host_with_port}/static/flash/layout.xml"
     @documentId = params[:id] 
   end
 end
