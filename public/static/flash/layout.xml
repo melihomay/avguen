@@ -1,7 +1,7 @@
 <?xml version="1.0"?> 
 <viewer xmlns="http://issuu.com/viewer/1.0" backgroundColor="#606060" backgroundImage="#0,0,200,600" backgroundSize="stretch"> 
  
- <skin source="mskins.png" type="image"/> 
+ <skin source="avskin.png" type="image"/> 
  
   <box direction="horizontal" horizontalAlign="center" verticalAlign="middle" left="0" right="0" top="0" bottom="#droppContentTop"> 
     <button action="pagePrevious" upState="#329,256,364,284" overState="#329,285,364,313" downState="#329,314,364,342" disabledState="#329,227,364,255" toolTip="Önceki sayfa" /> 
@@ -34,11 +34,11 @@
 
     <spacer width="6" /> 
 
-    <button action="openUrl:https://plus.google.com/u/0/b/115701887278531424926/115701887278531424926/posts"  upState="#477,256,501,284" overState="#477,285,501,313" downState="#477,314,501,342" toolTip="Avrupagün twitter" />
+    <button action="openUrl:https://twitter.com/avrupagun"  upState="#477,256,501,284" overState="#477,285,501,313" downState="#477,314,501,342" toolTip="Avrupagün twitter" />
 
     <spacer width="6" />
 
-    <button action="openUrl:https://plus.google.com/u/0/b/115701887278531424926/115701887278531424926/posts"  upState="#452,256,476,284" overState="#452,285,476,313" downState="#452,314,476,342" toolTip="Avrupagün Facebook" />
+    <button action="openUrl:http://www.facebook.com/Avrupagun"  upState="#452,256,476,284" overState="#452,285,476,313" downState="#452,314,476,342" toolTip="Avrupagün Facebook" />
 
     <spacer width="6" />
 

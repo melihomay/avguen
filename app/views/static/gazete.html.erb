@@ -1,5 +1,5 @@
 
-<div>
+<div class="left">
   <object style="width:100%;height:100%" >
     <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v1/IssuuViewer.swf?mode=embed&amp;<%= @layout %>&amp;proSidebarEnabled=true&amp;username=arkapencere&amp;backgroundColor=%23222222&amp;documentId=<%= @documentId %>" />
     <param name="allowfullscreen" value="true"/>
@@ -13,7 +13,23 @@
       wmode="transparent" 
       style="width:100%;height:100%" 
       flashvars="mode=embed&amp;<%= @layout %>&amp;proSidebarEnabled=true&amp;backgroundColor=%23222222&amp;username=arkapencere&amp;documentId=<%= @documentId %>" />
-    </object>
+  </object>
+</div>
+<div class="right">
+  <div>
+    <%= link_to static_path( :gazete , id:'120802234302-4ff774e243434c8ebeab4bd7bf00f0c0' ) do %>
+      <%= image_tag 'titles/avgun_01.png' %>
+    <% end -%>
+
+    <%= link_to static_path( :gazete , id:'120724210901-37aa80eff1804cc08820e43ecdc4876a' ) do %>
+      <%= image_tag 'titles/avgun_00.png' %>
+    <% end -%>
+
+    <%= link_to static_path( :gazete , id:'120714053808-9340b1b78936440191ee641f5c2f5eeb' ) do %>
+      <%= image_tag 'titles/avgun_kultur.png' %>
+    <% end -%>
   </div>
+</div>
+<div style="clear:both"></div>
 
 <%= render 'navigation' %>
