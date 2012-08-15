@@ -13,14 +13,13 @@
     <link rel="shortcut icon" href="/favicon.png?1"/>
     <meta name="description" content="...">
     <meta name="viewport" content="width=device-width">
-    
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
 
-  <%= yield %>
+    <%= yield %>
 
   </body>
+  <%= javascript_include_tag "application" %>
 </html>
-<%= javascript_include_tag "application" %>

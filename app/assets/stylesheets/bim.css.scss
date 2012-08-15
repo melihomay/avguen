@@ -8,10 +8,21 @@ body {
 }
 
 .left{
-  float:left;
-  width: 90%;
+  width:600px;
+  top:0px;
+  position: absolute; 
+  z-index: 10;  
+  height: 100%;
+  overflow: hidden;
 }
+
 .right{
+  height:100%; 
+  width:120px; 
+  position:absolute; 
+  z-index: 60; 
+  right: 0px; 
+  margin:auto;
   background-color: #000;
   height:100%;
   div{
@@ -22,6 +33,7 @@ body {
     padding-top: 20px;
   }
 }
+
 header {
   position: relative;
   overflow: hidden;

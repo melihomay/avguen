@@ -1,6 +1,5 @@
-
-<div class="left">
-  <object style="width:100%;height:100%" >
+<div id="gazete" class="left">
+  <object style="width:100%;height:100%;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" >
     <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v1/IssuuViewer.swf?mode=embed&amp;<%= @layout %>&amp;proSidebarEnabled=true&amp;username=arkapencere&amp;backgroundColor=%23222222&amp;documentId=<%= @documentId %>" />
     <param name="allowfullscreen" value="true"/>
     <param name="menu" value="false"/>
@@ -14,6 +13,7 @@
       style="width:100%;height:100%" 
       flashvars="mode=embed&amp;<%= @layout %>&amp;proSidebarEnabled=true&amp;backgroundColor=%23222222&amp;username=arkapencere&amp;documentId=<%= @documentId %>" />
   </object>
+
 </div>
 <div class="right">
   <div>
@@ -30,6 +30,3 @@
     <% end -%>
   </div>
 </div>
-<div style="clear:both"></div>
-
-<%= render 'navigation' %>
