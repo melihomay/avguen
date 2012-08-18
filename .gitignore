@@ -35,3 +35,5 @@ config/newrelic.yml
 .autotest
 nbproject/*
 .rspec
+.tags
+.tags_sorted_by_file
