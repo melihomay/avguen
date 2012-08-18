@@ -1,0 +1,43 @@
+<?xml version="1.0"?> 
+<viewer xmlns="http://issuu.com/viewer/1.0" backgroundColor="#606060" backgroundImage="#0,0,200,600" backgroundSize="stretch"> 
+ 
+ <skin source="avskin.png" type="image"/> 
+ 
+  <box direction="horizontal" horizontalAlign="center" verticalAlign="middle" left="0" right="0" top="0" bottom="#droppContentTop"> 
+    <button action="pagePrevious" upState="#329,256,364,284" overState="#329,285,364,313" downState="#329,314,364,342" disabledState="#329,227,364,255" toolTip="Önceki sayfa" /> 
+
+    <button action="pageNext" upState="#364,256,399,284" overState="#364,285,399,313" downState="#364,314,399,342" disabledState="#364,227,399,255" toolTip="Sonraki sayfa" />
+
+    <spacer width="6" /> 
+
+    <button action="index" upState="#252,256,276,284" overState="#252,285,276,313" downState="#252,314,276,342" toolTip="&#304;çerik - Tüm sayfalar" />
+
+    <spacer width="6" /> 
+
+    <button action="fullScreen" upState="#226,256,251,284" overState="#226,285,251,313" downState="#226,314,251,342" toolTip="Tam ekran" /> 
+
+    <spacer width="6" /> 
+
+    <button action="share" upState="#303,256,328,284" overState="#303,285,328,313" downState="#303,314,328,342" toolTip="Payla&#351;" />
+
+    <spacer width="6" /> 
+
+    <button action="search" upState="#426,256,451,284" overState="#426,285,451,313" downState="#426,314,451,342" toolTip="Bu sayfada ara" />
+
+    <spacer width="6" /> 
+     
+    <button action="print"  upState="#277,256,302,284" overState="#277,285,302,313" downState="#277,314,302,342" toolTip="Yazd&#305;r" />
+
+    <spacer width="6" /> 
+
+    <pageNumber fontSize="12" color="#666666" fontFamily="Helvetica, Helvetica Neue, Arial, Verdana"/> 
+
+    <spacer width="6" /> 
+
+  </box>
+  
+  <dropp left="8" right="8" top="40" bottom="80"/> 
+ 
+  <dock verticalAlign="bottom" left="10" right="10" bottom="10" height="100"/> 
+ 
+</viewer>

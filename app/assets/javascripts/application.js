@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.tipsy.js
 //= require gazete
 // require_tree .
