@@ -15,19 +15,19 @@
   </object>
 
 </div>
-<div class="right">
+  <div class="right">
+    <div class="padding-buttom">
+      <%= link_to '/' do %>
+        <%= image_tag 'logo-300x300.png' , widt:'20' , height:'20' %> <span>Ana Sayfa</span>
+      <% end -%>
+    </div>
   <div>
-    <%= link_to static_path( :gazete , id:'120802234302-4ff774e243434c8ebeab4bd7bf00f0c0' ) , 'original-title' => render( 'tool_tip_01' ) do %>
-      <%= image_tag 'titles/avgun_01.png' %>
+
+    <%= link_to static_path( :gazete , id:'120724210901-37aa80eff1804cc08820e43ecdc4876a' ) , 'original-title' => render( 'tool_tip_01' )  do %>
+      <%= image_tag 'titles/avgun_00.png' , class:'overview' %>
+      <br>Sayı: 001
     <% end -%>
 
-    <%= link_to static_path( :gazete , id:'120724210901-37aa80eff1804cc08820e43ecdc4876a' ) , 'original-title' => render( 'tool_tip_02' )  do %>
-      <%= image_tag 'titles/avgun_00.png' %>
-    <% end -%>
-
-    <%= link_to static_path( :gazete , id:'120714053808-9340b1b78936440191ee641f5c2f5eeb' ) , 'original-title' => render( 'tool_tip_03' )  do %>
-      <%= image_tag 'titles/avgun_kultur.png' %>
-    <% end -%>
   </div>
 </div>
 
