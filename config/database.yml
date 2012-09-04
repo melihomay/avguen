@@ -4,7 +4,7 @@ base: &base
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: postgres
+  username: mWork
   password: 
 
 development:

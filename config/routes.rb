@@ -48,9 +48,13 @@ Bim::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  constraints(:host => /www.avrupagun.eu/) do
+    match "/" => redirect {|params, req| "http://www.avrupagun.eu/static/gazete?id=120802234302-4ff774e243434c8ebeab4bd7bf00f0c0"}
+  end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+
   root :to => 'static#home'
 
   # See how all your routes lay out with "rake routes"
