@@ -27,7 +27,10 @@ Bim::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+  
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales

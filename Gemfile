@@ -21,6 +21,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'omniauth-facebook' , '1.4.0'
+
 group :development do
   # To use debugger
   gem 'debugger'

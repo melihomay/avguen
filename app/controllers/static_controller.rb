@@ -13,4 +13,8 @@ class StaticController < ApplicationController
     @layout = "layout=http://#{request.host_with_port}/static/flash/layout_no_social.xml"
     @documentId = params[:id] 
   end
+
+  def privacy
+    
+  end
 end
