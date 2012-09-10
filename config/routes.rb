@@ -55,7 +55,8 @@ Bim::Application.routes.draw do
   #     resources :products
   #   end
   constraints(:host => /www.avrupagun.eu/) do
-    match "/" => redirect {|params, req| "http://www.avrupagun.eu/gazete?id=120802234302-4ff774e243434c8ebeab4bd7bf00f0c0"}
+    # match "/" => redirect {|params, req| "http://www.avrupagun.eu/gazete?id=120802234302-4ff774e243434c8ebeab4bd7bf00f0c0"}
+    match "/" => redirect {|params, req| "http://www.avrupagun.eu/gazete?id=120724210901-37aa80eff1804cc08820e43ecdc4876a"}
   end
 
   # You can have the root of your site routed with "root"
