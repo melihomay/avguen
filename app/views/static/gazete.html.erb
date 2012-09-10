@@ -17,13 +17,13 @@
 </div>
   <div class="right">
     <div class="padding-buttom">
-      <%= link_to static_path( :home ) do %>
+      <%= link_to home_path do %>
         <%= image_tag 'logo-300x300.png' , widt:'20' , height:'20' %> <span>Ana Sayfa</span>
       <% end -%>
     </div>
   <div>
 
-    <%= link_to static_path( :gazete , id:'120724210901-37aa80eff1804cc08820e43ecdc4876a' ) , 'original-title' => render( 'tool_tip_01' )  do %>
+    <%= link_to gazete_path(  id:'120724210901-37aa80eff1804cc08820e43ecdc4876a' ) , 'original-title' => render( 'tool_tip_01' )  do %>
       <%= image_tag 'titles/avgun_00.png' , class:'overview' %>
       <br>Sayı: 001
     <% end -%>

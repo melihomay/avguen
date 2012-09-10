@@ -3,8 +3,11 @@ Bim::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  match "static/:action" => "static#:action", as: :static
+  # match "static/:action" => "static#:action", as: :static
 
+  %w"home imprint gazete privacy".each do | page |
+    get page, controller: "static", action: page
+  end
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -52,7 +55,7 @@ Bim::Application.routes.draw do
   #     resources :products
   #   end
   constraints(:host => /www.avrupagun.eu/) do
-    match "/" => redirect {|params, req| "http://www.avrupagun.eu/static/gazete?id=120802234302-4ff774e243434c8ebeab4bd7bf00f0c0"}
+    match "/" => redirect {|params, req| "http://www.avrupagun.eu/gazete?id=120802234302-4ff774e243434c8ebeab4bd7bf00f0c0"}
   end
 
   # You can have the root of your site routed with "root"
