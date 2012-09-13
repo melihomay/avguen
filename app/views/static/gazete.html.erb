@@ -21,6 +21,15 @@
         <%= image_tag 'logo-300x300.png' , widt:'20' , height:'20' %> <span>Ana Sayfa</span>
       <% end -%>
     </div>
+
+  <div>
+    
+    <%= link_to gazete_path(  id:'120913013604-26aa942ff3a24fbb9241464242bb5106' ) , 'original-title' => render( 'tool_tip_02' )  do %>
+      <%= image_tag 'titles/avgun_02.png' , class:'overview' %>
+      <br>Sayı: 002
+    <% end -%>
+
+  </div>  
   <div>
 
     <%= link_to gazete_path(  id:'120724210901-37aa80eff1804cc08820e43ecdc4876a' ) , 'original-title' => render( 'tool_tip_01' )  do %>

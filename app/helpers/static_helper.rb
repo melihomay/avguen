@@ -1,5 +1,6 @@
 module StaticHelper
   def switch_domain_for_google
-    render request.domain if %w"avrupa-gun.eu".index request.domain
+    domain_name = request.domain.split('.').first
+    render domain_name if %w"avrupa-gun avrupagun".index domain_name
   end
 end
